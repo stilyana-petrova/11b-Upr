@@ -25,7 +25,7 @@ namespace Email_28_02_2022
                     }
                     else
                     {
-                        emails[name] += email;
+                        emails[name] = email;
                     }               
                 }
                 if (command[0]=="Sent")
