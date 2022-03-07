@@ -21,63 +21,61 @@ namespace Izpitvane_01_03_2022
                     }
                     break;
                 }
-                if (command[0] =="Purchase")
+                switch (command[0])
                 {
-                    string toy = command[1];
-                    int q = int.Parse(command[2]);
-                    
-                    if (!toys.ContainsKey(toy))
-                    {
-                        if (toy.StartsWith("d"))
+                    case "Purchase":
                         {
-                            toys.Add(toy, q);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Input is not correct!");
-                        }
-                    }
-                    else
-                    {
-                        toys[toy] += q;
-                    }
-                   
-                }
-                if (command[0] == "Sale")
-                {                  
-                    string toy = command[1];
+                            string toy = command[1];
+                            int count = int.Parse(command[2]);
 
-                    if (toys.ContainsKey(toy))
-                    {
-                        foreach (var item in toys)
-                        {
-                            int q = item.Value;
-                            q = 0;
+                            if (toy.StartsWith("d"))
+                            {
+                                if (!toys.ContainsKey(toy))
+                                {
+                                    toys.Add(toy, count);
+                                }
+                                else
+                                {
+                                    toys[toy] += count;
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Input is not correct!");
+                            }
+                            break;
                         }
-                    }
-                    else
-                    {
-                        Console.WriteLine($"{toy} does not exists!");
-                    }
-                    foreach (var item in toys)
-                    {
-                        int q = item.Value;
-                        if (q==0)
+                    case "Sale":
                         {
-                            Console.WriteLine("Sale is not allowed!");
+                            string toy = command[1];
+
+                            if (!toys.ContainsKey(toy))
+                            {
+                                Console.WriteLine($"{toy} does not exists!");
+                            }
+                            else
+                            {
+                                if (toys[toy] > 0)
+                                {
+                                    toys[toy]--;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Sale is not allowed!");
+                                }
+                            }
+                            break;
                         }
-                    }
-                    
-                    
-                }
-                if (command[0] =="All sale")
-                {
-                    int i = 0;
-                    foreach (var item in toys)
-                    {
-                        int q=item.Value;
-                        q = i;
-                    }
+                    case "All sale":
+                        {
+                            foreach (var item in toys)
+                            {
+                                toys[item.Key] = 0;
+                            }
+                            break;
+                        }
+                    default:
+                        break;
                 }
             }
         }
