@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Email-28-02-2022", "Email-2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Izpitvane-01-03-2022", "Izpitvane-01-03-2022\Izpitvane-01-03-2022.csproj", "{ED45A1F0-5968-465B-BDA8-A27F72F59801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Email-07-03-2022", "Email-07-03-2022\Email-07-03-2022.csproj", "{344AAB11-8F93-4FEB-882F-A26682B8DCC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Email-07-03-2022", "Email-07-03-2022\Email-07-03-2022.csproj", "{344AAB11-8F93-4FEB-882F-A26682B8DCC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clothes-07-03-2022", "Clothes-07-03-2022\Clothes-07-03-2022.csproj", "{8D670777-EF85-46EC-9D7F-AF4DA391AB4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clothes-07-03-2022", "Clothes-07-03-2022\Clothes-07-03-2022.csproj", "{8D670777-EF85-46EC-9D7F-AF4DA391AB4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Email-08-03-2022", "Email-08-03-2022\Email-08-03-2022.csproj", "{DFF8FB2C-E4DC-4438-8051-41EFC678FA0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{8D670777-EF85-46EC-9D7F-AF4DA391AB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D670777-EF85-46EC-9D7F-AF4DA391AB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D670777-EF85-46EC-9D7F-AF4DA391AB4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFF8FB2C-E4DC-4438-8051-41EFC678FA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF8FB2C-E4DC-4438-8051-41EFC678FA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF8FB2C-E4DC-4438-8051-41EFC678FA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF8FB2C-E4DC-4438-8051-41EFC678FA0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
