@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using BankAccountTest;
+using System;
 
 namespace BankingSystem.Test
 {
@@ -34,6 +35,24 @@ namespace BankingSystem.Test
             account.Deposit(1100);
             account.Bonus();
             Assert.AreEqual(1200, account.Balance);
+        }
+        [Test]
+        public void PaymentForCreditShouldThrowrAgumentExceptionWhenNotEnoughMoney()
+        {
+            BankAccount account = new BankAccount(20);
+            Assert.Throws<ArgumentException>(() => account.PaymentForCredit(200));
+        }
+        [Test]
+        public void PaymentForCreditShouldThrowArgumentExceptionWhenPaymentIsNegative()
+        {
+            BankAccount account = new BankAccount(20);
+            Assert.Throws<ArgumentException>(() => account.PaymentForCredit(-10));
+        }
+        [Test]
+        public void PaymentForCreditShouldThrowrgumentExceptionWhenPaymentIsZero()
+        {
+            BankAccount account = new BankAccount(20);
+            Assert.Throws<ArgumentException>(() => account.PaymentForCredit(0));
         }
     }
 }
