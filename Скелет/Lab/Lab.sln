@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skeleton", "Skeleton\Skeleton.csproj", "{B7C13488-44A9-432D-A12C-ED88E9656144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject1", "NUnitTestProject1\NUnitTestProject1.csproj", "{CE845EF7-F3D4-4FFA-884B-45B1407F019B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{B7C13488-44A9-432D-A12C-ED88E9656144}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7C13488-44A9-432D-A12C-ED88E9656144}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7C13488-44A9-432D-A12C-ED88E9656144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE845EF7-F3D4-4FFA-884B-45B1407F019B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE845EF7-F3D4-4FFA-884B-45B1407F019B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE845EF7-F3D4-4FFA-884B-45B1407F019B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE845EF7-F3D4-4FFA-884B-45B1407F019B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38BD8014-28A9-402A-BE3A-AD89CDD4B109}
 	EndGlobalSection
 EndGlobal
