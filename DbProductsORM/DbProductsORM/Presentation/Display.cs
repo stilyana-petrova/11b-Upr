@@ -24,6 +24,7 @@ namespace DbProductsORM.Presentation
             Console.WriteLine("6. Exit");
 
         }
+
         private void Input()
         {
             var operation = -1;
